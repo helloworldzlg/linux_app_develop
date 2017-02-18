@@ -10,7 +10,7 @@ int main(void)
 	result = fork();
 	if (result == -1) {
 		printf("Fork error\n");
-	} else if(result == 0) {
+	} else if (result == 0) {
 		printf("Children process, PID = %d, PPID = %d\n", getpid(), getppid());
 		printf("The returned value is %d\n", result);				
 	} else {
